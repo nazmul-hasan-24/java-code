@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+       http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+<bean id="my_Info1" class= " org.example.myinfo.MyInfo">
+    <property name="name" value="Nazmul Hasan"> </property>
+    <property name="age" value="23"> </property>
+    <property name="homeDistrict" value="Lakshmipur"> </property>
+    <property name="myAssets" ref="myAssets1"> </property>
+
+</bean>
+
+<bean id="myAssets1" class="org.example.myinfo.MyAssets">
+    <property name="computer" value="I have one Computer"> </property>
+    <property name="table" value="I have one Table"> </property>
+    <property name="money" value="3000"> </property>
+
+</bean>
+
+</beans>
