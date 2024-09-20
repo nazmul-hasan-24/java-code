@@ -2,6 +2,7 @@ package exception;
 import java.io.PrintWriter;
 import java.io.FileNotFoundException;
 public class TryCatch {
+    @SuppressWarnings("null")
     public static void main(String[] args) {
      try {
          int age = 11/0;
